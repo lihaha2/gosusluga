@@ -1,9 +1,18 @@
+@font-face{
+  font-family:"Lato-Bold";
+  src: url(https://gu-st.ru/covid-web-st/static-pages-assets/Lato-Bold.39775d377afbc753c1d1.woff2) format("woff2"),
+  url(https://gu-st.ru/covid-web-st/static-pages-assets/Lato-Bold.39775d377afbc753c1d1.woff2) format("woff");
+  font-weight:600;
+  font-style:normal;
+  font-display:swap
+}
+
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  /* padding: 0;
+  margin: 0; */
+  font-family: "Lato-Bold";
+  color: #0b1f33;
 }
 
 a {
