@@ -5,6 +5,7 @@ import Image from "next/image"
 import styles from "../../../styles/Status.module.css"
 import Link from "next/link"
 import React from "react"
+
 const Status: NextPage = () => {
 
     const [ru, setRu]:[boolean, any] = React.useState(true)
@@ -22,7 +23,10 @@ const Status: NextPage = () => {
     //     pass: "40",
     //     pass2: "132"
     // }
-    console.log(query)
+    const getRandomInt = (max:number)=> {
+        return Math.floor(Math.random() * max)
+    }
+
     return (
         <>
             <Head>
@@ -51,7 +55,7 @@ const Status: NextPage = () => {
                     <div className={styles.contentCard}>
                         <div className={styles.cardText}>{data.lang[0]}</div>
                         <div className={styles.cardValid}>{data.lang[1]}</div>
-                        <div className={styles.cardText}>№ 1000 1353 0413 6221</div>
+                        <div className={styles.cardText}>№ 1{getRandomInt(100).toString().padEnd(3, '0')} {getRandomInt(1350).toString().padStart(4, '0')} {getRandomInt(9999).toString().padStart(4, '0')} {getRandomInt(7000).toString().padStart(4, '0')}</div>
                     </div>
                     <div className={styles.calendar}>
                         <Image
